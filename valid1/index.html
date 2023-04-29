@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Валидация</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="#0">
+    <div>
+      <input required type="text" name="first_name" id="first_name" placeholder=" ">
+      <label for="first_name">First_name</label>
+    </div>
+    <div>
+      <input required type="text" name="last_name" id="last_name" placeholder=" ">
+      <label for="last_name">Last_name</label>
+    </div>
+    <div>
+      <input required type="email" name="email" id="email" placeholder=" ">
+      <label for="email">Email</label>
+        <div class="requirements">
+          Неправильная почта.
+        </div>
+    </div>
+
+    <div>
+      <input required type="password" name="password" id="password" placeholder=" " pattern="(?=.*[A-Z]).{6,}">
+      <label for="password">Password</label>
+        <div class="requirements">
+          Неправильный пароль.
+        </div>
+    </div>
+
+    <input type="submit" value="Sign up">
+  </form>
+</body>
+</html>
